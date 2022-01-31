@@ -1,0 +1,15 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  background-color: bisque;
+
+  &__text {
+    flex-basis: 40%;
+  }
+}

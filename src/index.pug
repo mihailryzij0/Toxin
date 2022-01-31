@@ -1,0 +1,70 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
+        title Document
+    body 
+        include ./common-modules/header/header
+        main.main
+            main.main__wrapper
+                .main-text 
+                    h2.main-text__title Food<span class = "color_orange">blog</span>
+                    p.main-text__description Здесь вы найдете рецепты на любой вкус от лучшего шеф-повара Рыжего Михаила  
+                    a.main-text__btn.button(href="./allRecipes.html") смотреть все рецепты
+                .main-visual 
+                    .main-visual__image 
+                        img(src=require('./asset/image-main.png')  alt="main")
+                img(src=require('./asset/tomato.png')  alt="tomato").main__image.main__tomato
+                img(src=require('./asset/pepper.png')  alt="pepper").main__image.main__pepper
+                img(src=require('./asset/avocado.png')  alt="avocado").main__image.main__avocado
+                img(src=require('./asset/bob.png')  alt="bob").main__image.main__bob
+        section.section-recipes.container
+            .section-recipes__wrapper
+                h2.section-recipes__title.title#anchor Лучшее на этой неделе
+                .recipe.section-recipes__item
+                    .recipe__info 
+                        h2.recipe__title.sub-title Панкейки
+                        p.recipe__description Эти толстые панкейки похожи на маленькие суфле: внутри напоминают крем, а снаружи золотистые и хрустящие. Стопка таких панкейков прекрасно смотрится на фото.
+                        a.recipe__btn.button(href="./recipePage.html") Узнать рецепт
+                    .recipe__img-box
+                        img.recipe__img(src=require('./asset/pankeik.jpg')  alt="alt")
+                .recipe.section-recipes__item
+                    .recipe__info 
+                        h2.recipe__title.sub-title Запеченная курица
+                        p.recipe__description Эти толстые панкейки похожи на маленькие суфле: внутри напоминают крем, а снаружи золотистые и хрустящие. Стопка таких панкейков прекрасно смотрится на фото.
+                        a.recipe__btn.button(href="./recipePage.html") Узнать рецепт
+                    .recipe__img-box
+                        img.recipe__img(src=require('./asset/eggplant.jpg')  alt="alt")
+                .recipe.section-recipes__item
+                    .recipe__info 
+                        h2.recipe__title.sub-title Панкейки
+                        p.recipe__description Эти толстые панкейки похожи на маленькие суфле: внутри напоминают крем, а снаружи золотистые и хрустящие. Стопка таких панкейков прекрасно смотрится на фото.
+                        a.recipe__btn.button(href="./recipePage.html") Узнать рецепт
+                    .recipe__img-box
+                        img.recipe__img(src=require('./asset/pankeik.jpg')  alt="alt")
+        section.section-new.container
+            .section-new__wrapper
+                h2.section-new__title.title#section-new Новое авторское блюдо 
+                .recipe.section-recipes__item
+                    .recipe__info 
+                        h2.recipe__title.sub-title Панкейки
+                        p.recipe__description Эти толстые панкейки похожи на маленькие суфле: внутри напоминают крем, а снаружи золотистые и хрустящие. Стопка таких панкейков прекрасно смотрится на фото.
+                        a.recipe__btn.button(href="./recipePage.html") Узнать рецепт
+                    .recipe__img-box
+                        img.recipe__img(src=require('./asset/pankeik.jpg')  alt="alt")
+        .slider
+            h2.section-recipes__title.title#anchor Слайдер
+            .slider__wrapper
+                .slider__container
+                    img.slider__img(src=require('./asset/pankeik.jpg')  alt="alt")
+                    img.slider__img(src=require('./asset/eggplant.jpg')  alt="alt")
+                    img.slider__img(src=require('./asset/pankeik.jpg')  alt="alt")
+                    img.slider__img(src=require('./asset/eggplant.jpg') alt="alt")
+                button.slider__control.slider__control_prev 
+                    img(src=require('./asset/arrow.png')  alt="alt")
+                button.slider__control.slider__control_next 
+                    img(src=require('./asset/arrow.png')  alt="alt")
+        include ./common-modules/footer/footer

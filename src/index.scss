@@ -1,0 +1,213 @@
+@use "./common-modules/static-style/normalize.scss";
+
+.container {
+  max-width: 1450px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+/* stylelint-disable, declaration-colon-newline-after */
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 50.5%) 0%,
+    rgb(191 96 31 / 100%) 50%,
+    rgb(255 255 255 / 46.5%) 100%
+  );
+  border-image-slice: 1;
+}
+
+.sub-title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Fredoka One", cursive;
+}
+
+.button {
+  background-color: #d26a22;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  transition: 0.2s ease;
+  box-shadow: 0 10px 11.18px 1.82px rgb(207 92 13 / 20%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #bf601f;
+  }
+}
+
+.color {
+  &_orange {
+    color: #d26a22;
+  }
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Fredoka One", cursive;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  position: relative;
+  border-image: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 50.5%) 0%,
+    rgb(191 96 31 / 100%) 50%,
+    rgb(255 255 255 / 46.5%) 100%
+  );
+  border-image-slice: 1;
+
+  &::before {
+    content: url("./asset/chefHat.png");
+    display: block;
+    position: absolute;
+    transform: rotate(55deg);
+    right: -22px;
+    top: -8px;
+  }
+}
+
+// ----------------------------------------------------------
+
+body {
+  background: #fff;
+  background: linear-gradient(to left, #fff, #f5fff5);
+  background: linear-gradient(to left, #fff, #f5fff5);
+  background: linear-gradient(to right, #fff, #f5fff5);
+}
+
+.main {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+  &__tomato {
+    left: 451px;
+    top: 50px;
+  }
+
+  &__pepper {
+    top: 39%;
+    left: 57px;
+  }
+
+  &__avocado {
+    bottom: 47px;
+    left: 19%;
+  }
+
+  &__bob {
+    left: 135px;
+    top: 159px;
+  }
+}
+
+.main-visual {
+  position: relative;
+  border: solid 1px #27300f;
+  border-radius: 100%;
+  margin-bottom: 22px;
+  padding: 53px;
+
+  &__image {
+    border-radius: 100%;
+    border: solid 1px #27300f;
+    padding: 21px;
+
+    img {
+      border-radius: 100%;
+      box-shadow: 15px 48px 42px 0 #27300f;
+    }
+  }
+}
+
+.main-text {
+  flex-basis: 24%;
+
+  &__description {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Fredoka One", cursive;
+    margin-bottom: 20px;
+  }
+}
+
+// ------------------------------------------------------
+.section-recipes {
+  margin-top: 100px;
+
+  &__wrapper {
+    margin-bottom: 150px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+}
+
+.recipe {
+  display: flex;
+  justify-content: space-around;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  &__info {
+    flex-basis: 38%;
+    margin: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    font-family: "Hind Madurai", sans-serif;
+    max-width: 450px;
+  }
+
+  &__img-box {
+    flex-basis: 40%;
+    position: relative;
+    min-height: 200px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.section-new {
+  &__wrapper {
+    margin-bottom: 150px;
+  }
+}
